@@ -4,7 +4,7 @@ import com.fraudlab.model.Alert;
 import com.fraudlab.model.Transaction;
 import com.fraudlab.rules.VelocityRuleFn;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
-import org.apache.flink.api.common.time.Time;
+import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.datastream.DataStreamUtils;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.junit.jupiter.api.Test;
