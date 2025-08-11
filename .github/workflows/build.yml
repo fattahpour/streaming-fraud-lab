@@ -15,5 +15,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: maven
-      - name: Build with Maven
-        run: mvn -B -ntp -DskipITs=false test
+      - name: Build
+        run: make build
+      - name: Run tests
+        run: make test
